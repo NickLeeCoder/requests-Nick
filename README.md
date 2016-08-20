@@ -15,13 +15,13 @@
 - byte转成str后  利用函数parsed_response解析str类型的服务器响应 得到返回的数据
 ###格式为(状态码 响应头(header) 响应体(body))  而其中body就是我们需要的制作网页爬虫的HTML源码
 
-#####其实这就是requests 库的实现原理
-####3我要做的就是 进一步封装其中的request请求 把headers给封装起来  方便设置
+####其实这就是requests 库的实现原理
+####我要做的就是 进一步封装其中的request请求 把headers给封装起来  方便设置
 
-#####函数response_by_socket
-#####其实就是根据传入的socket实例s  利用while循环接收服务器的响应数据
-#####然后进行返回
+####函数response_by_socket
+####其实就是根据传入的socket实例s  利用while循环接收服务器的响应数据
+####然后进行返回
 
-#####函数parsed_respons
-#####对服务器返回的数据进行响应的解析....
-#####最主要的就是进行字符串的split...
+####函数parsed_respons
+####对服务器返回的数据进行响应的解析....
+####最主要的就是进行字符串的split...
